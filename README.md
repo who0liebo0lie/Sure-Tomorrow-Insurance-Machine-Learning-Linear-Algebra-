@@ -87,10 +87,12 @@ Gradient descent effectively converged to a solution similar to scikit-learn
 
 Matrix inversion and dot product operations replicate sklearn results with high accuracy
 
-📸 Screenshots
-📈 Line of Best Fit
+### 📈 Line of Best Fit  
+![Line Fit](images_suretomorrow/suretomorrow_image_1.png)
 
-📉 Residual Analysis
+### 📉 Residual Analysis  
+![Residuals](images_suretomorrow/suretomorrow_image_2.png)
+
 
 🤝 Contributing
 Interested in extending this with polynomial regression or additional algebraic insights? Fork the repo and submit a pull request!
