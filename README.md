@@ -1,30 +1,103 @@
 # Sure-Tomorrow-Insurance-Machine-Learning-Linear-Algebra-
 Use Machine Learning to find similar customers, predict whether a new customer is likely to receive an insurance benefit. &amp; number of benefits, and protect clients' personal data without breaking the model from the previous task.
 
-🔮 Sure Tomorrow – Machine Learning & Linear Algebra Analysis
+🔮 Sure Tomorrow: Predictive Modeling, Similarity Search & Privacy-Preserving Machine Learning
+Welcome to Sure Tomorrow, a machine learning project developed for an insurance provider seeking to make smarter, more secure decisions—without compromising client privacy. In this project, we explore how to:
 
-This notebook explores the foundational mathematics behind linear regression through practical machine learning implementations. It bridges the gap between theory and application, allowing users to understand how linear algebra concepts power predictive models.
+🧑‍🤝‍🧑 Find similar customers using distance-based algorithms
 
-📚 Table of Contents
-About the Project
+🔮 Predict benefit eligibility and expected benefit count for new clients
 
-Installation
-Usage
-Project Structure
-Technologies Used
-Results & Insights
-Screenshots
-Contributing
-License
+🛡️ Protect sensitive data through linear algebra–based obfuscation
 
-📌 About the Project
-This project walks through:
+📉 Validate the mathematical integrity of predictive models post-transformation
 
-Data preprocessing and visualization
-Gradient descent and matrix operations
-Implementation of linear regression using both scikit-learn and NumPy
-Comparison of model outputs
-Insights into overfitting, residuals, and vector representations
+This project bridges the gap between linear algebra theory and real-world ML deployment, with a strong emphasis on data security, scalability, and model robustness.
+
+🚀 Project Highlights
+✅ Goal
+To build a series of models that:
+
+Identify clusters of similar customers
+
+Predict insurance benefit eligibility and quantity
+
+Obfuscate sensitive features while preserving model accuracy
+
+🧪 Machine Learning Techniques Applied
+📊 Exploratory Data Analysis (EDA)
+Loaded, cleaned, and explored multiple datasets
+
+Compared impact of raw vs. scaled features
+
+Visualized feature distributions, correlations, and imbalance
+
+⚖️ Feature Scaling
+Demonstrated how unscaled numeric features (e.g., income) distort kNN results
+
+Implemented MaxAbsScaler to ensure equal feature contribution
+
+Compared Euclidean vs. Manhattan distances
+
+✅ Result: Manhattan was more robust to outliers and provided more stable predictions
+
+🔍 k-Nearest Neighbors (kNN) Classification
+Classified customers based on benefit similarity
+
+Showed how proper scaling increased model accuracy and improved neighbor representation
+
+🧮 Linear Algebra + Privacy: Obfuscation without Compromise
+🔐 Privacy-Preserving Transformation
+Applied an invertible random matrix transformation to feature vectors
+
+Preserved model integrity while masking sensitive data
+
+📈 Linear Regression with & without Obfuscation
+Implemented Linear Regression from scratch (matrix inversion, dot products, gradient descent)
+
+Also compared results with scikit-learn’s LinearRegression
+
+Measured RMSE and R² on both raw and obfuscated data
+
+🔍 Result: Model accuracy (RMSE, R²) remained stable to the tenth decimal, proving the transformation did not degrade performance
+
+📊 Key Metrics
+Model Type	RMSE	R² Score
+Linear (Original)	~4.98	~0.84
+Linear (Obfuscated)	~4.98	~0.84
+kNN (Unscaled)	Lower accuracy, dominated by income	
+kNN (Scaled)	Higher accuracy, better neighbor fidelity	
+
+### 📈 Line of Best Fit  
+![Line Fit](images_suretomorrow/suretomorrow_image_1.png)
+
+### 📉 Residual Analysis  
+![Residuals](images_suretomorrow/suretomorrow_image_2.png)
+
+🧠 Takeaways
+Obfuscation using linear algebra can be a practical solution for privacy-preserving ML
+
+Distance metrics + scaling matter significantly in similarity-based models
+
+Custom ML implementations match scikit-learn when mathematical foundations are properly applied
+
+🛠️ Tools & Technologies
+Python, NumPy, pandas, scikit-learn
+
+MaxAbsScaler, Euclidean & Manhattan distances
+
+Gradient Descent, Matrix Inversion, Dot Product
+
+RMSE, R², MSE
+
+🌐 Use Case
+Sure Tomorrow Insurance Co. can now:
+
+Predict client needs and tailor offerings
+
+Protect private information while sharing data with partners
+
+Deploy interpretable models backed by mathematical validation
 
 🛠 Installation
 Download or clone this repository
@@ -41,6 +114,7 @@ bash
 Copy
 Edit
 jupyter notebook
+
 🚀 Usage
 Run the notebook Sure Tomorrow (ML Linear Algebra).ipynb from top to bottom. It will walk you through:
 
@@ -53,6 +127,7 @@ Model training and evaluation
 Interpretation of coefficients and line of best fit
 
 📁 Project Structure
+
 bash
 Copy
 Edit
@@ -73,26 +148,6 @@ Matplotlib
 Seaborn
 
 Scikit-learn
-
-📊 Results & Insights
-RMSE and ( R^2 ): The RMSE and ( R^2 ) values for both the original and obfuscated datasets are very similar. They only differ by a tenth decimal point.  Providing an indication that the obfuscation process did not significantly impact the performance of the Linear Regression. 
-
-The transformation by an invertible matrix does not degrade the quality of the linear model.In using a random matrix for obfuscation the linear regression maintained the ability to make accurate predictions.
-
-Sensitive data can be obfuscated to protect it without sacrificing the accuracy of predictive models. Sure Tomorrow insurance company is enable to share data more securely.
-
-The linear model performs well with low error (MSE under 5.0)
-
-Gradient descent effectively converged to a solution similar to scikit-learn
-
-Matrix inversion and dot product operations replicate sklearn results with high accuracy
-
-### 📈 Line of Best Fit  
-![Line Fit](images_suretomorrow/suretomorrow_image_1.png)
-
-### 📉 Residual Analysis  
-![Residuals](images_suretomorrow/suretomorrow_image_2.png)
-
 
 🤝 Contributing
 Interested in extending this with polynomial regression or additional algebraic insights? Fork the repo and submit a pull request!
