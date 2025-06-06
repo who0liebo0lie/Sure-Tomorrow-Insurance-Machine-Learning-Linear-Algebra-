@@ -25,6 +25,17 @@ Predict insurance benefit eligibility and quantity
 Obfuscate sensitive features while preserving model accuracy
 
 🧪 Machine Learning Techniques Applied
+## 🛠️ Industry-Ready Techniques Demonstrated
+
+| Technique           | Example(s) from Project |
+|---------------------|--------------------------|
+| **Linear Algebra**  | `from sklearn.preprocessing import StandardScaler` |
+| **Supervised Learning** | `from sklearn.linear_model import LinearRegression`<br>`from sklearn.ensemble import RandomForestRegressor`<br>`from sklearn.ensemble import GradientBoostingRegressor`<br>`from sklearn.tree import DecisionTreeRegressor`<br>`import lightgbm as lgb` |
+| **Model Evaluation** | `from sklearn.metrics import mean_squared_error`, `cross_val_predict` |
+| **Visualization**    | `import matplotlib.pyplot as plt`, `df.plot(...)`, `seasonal_decompose(...)` |
+| **Pipeline**         | `from sklearn.pipeline import Pipeline` |
+| **Feature Engineering** | `.resample(...)`, `df['datetime'].dt.hour`, `df['datetime'].dt.dayofweek` |
+
 📊 Exploratory Data Analysis (EDA)
 Loaded, cleaned, and explored multiple datasets
 
