@@ -37,6 +37,7 @@ Obfuscate sensitive features while preserving model accuracy
 | **Feature Engineering** | `.resample(...)`, `df['datetime'].dt.hour`, `df['datetime'].dt.dayofweek` |
 
 📊 Exploratory Data Analysis (EDA)
+
 Loaded, cleaned, and explored multiple datasets
 
 Compared impact of raw vs. scaled features
@@ -44,6 +45,7 @@ Compared impact of raw vs. scaled features
 Visualized feature distributions, correlations, and imbalance
 
 ⚖️ Feature Scaling
+
 Demonstrated how unscaled numeric features (e.g., income) distort kNN results
 
 Implemented MaxAbsScaler to ensure equal feature contribution
@@ -58,12 +60,15 @@ Classified customers based on benefit similarity
 Showed how proper scaling increased model accuracy and improved neighbor representation
 
 🧮 Linear Algebra + Privacy: Obfuscation without Compromise
+
 🔐 Privacy-Preserving Transformation
+
 Applied an invertible random matrix transformation to feature vectors
 
 Preserved model integrity while masking sensitive data
 
 📈 Linear Regression with & without Obfuscation
+
 Implemented Linear Regression from scratch (matrix inversion, dot products, gradient descent)
 
 Also compared results with scikit-learn’s LinearRegression
